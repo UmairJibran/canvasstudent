@@ -1,3 +1,4 @@
+import 'package:canvasstudent/screens/subject_detail.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/home.dart';
@@ -8,7 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      routes: {
+        "/": (ctx) => Home(),
+        SubjectDetail.route: (ctx) => SubjectDetail(),
+      },
     );
   }
 }

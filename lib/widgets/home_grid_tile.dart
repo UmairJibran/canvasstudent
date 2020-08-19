@@ -1,4 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:canvasstudent/screens/subject_detail.dart';
 import 'package:flutter/material.dart';
 
 class HomeGridTile extends StatelessWidget {
@@ -29,11 +30,11 @@ class HomeGridTile extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           onTap: () {
-            // Navigator.of(context).push(
-            //   MaterialPageRoute(
-            //     builder: (_) => ,
-            //   ),
-            // );
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => SubjectDetail(),
+              ),
+            );
           },
           splashColor: Colors.black12,
           child: Column(
