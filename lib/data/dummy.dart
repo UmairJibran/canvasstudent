@@ -38,3 +38,24 @@ final List subjects = [
     "color": Colors.deepPurple,
   },
 ];
+
+final List<Map<String, dynamic>> assignments = [
+  {
+    "assignmentTitle": "Biology 101 Quiz",
+    "subject": "Biology 101",
+    "color": Colors.blue,
+    "icon": Icons.airplanemode_active,
+  },
+  {
+    "assignmentTitle": "Shakespeare Sonnets",
+    "subject": "American Literature 401",
+    "color": Colors.purple,
+    "icon": Icons.assignment,
+  },
+  {
+    "assignmentTitle": "Group Assignment",
+    "subject": "Music Theory",
+    "color": Colors.yellow[700],
+    "icon": Icons.music_note,
+  },
+];
