@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
         title: Text("Dashboard"),
       ),
       body: Container(
-        height: MediaQuery.of(context).size.height,
+        height: MediaQuery.of(context).size.height * 0.8,
         width: MediaQuery.of(context).size.width,
         child: Center(
           child: _widgets.elementAt(_selectedIndex),
