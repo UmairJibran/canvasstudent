@@ -59,3 +59,5 @@ final List<Map<String, dynamic>> assignments = [
     "icon": Icons.music_note,
   },
 ];
+
+final List<Color> colors = [Colors.blue, Colors.purple, Colors.amber];

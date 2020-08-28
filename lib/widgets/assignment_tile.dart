@@ -20,7 +20,7 @@ class AssignmentTile extends StatelessWidget {
       child: ListTile(
         title: Text(assignmentName),
         subtitle: Text(
-          subjectName,
+          subjectName ?? "name",
           style: TextStyle(
             color: color,
           ),
