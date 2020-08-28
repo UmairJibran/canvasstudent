@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 class SubjectDetail extends StatelessWidget {
   static const String route = "/detailPage";
   final Color color = Colors.indigo;
-  final String subjectName = "Biology 101";
-  final String subjectCode = "Bio 101";
-  final String semester = "Spring 2016";
+  final String subjectName;
+  final String subjectCode;
+  final String semester;
+
+  SubjectDetail({this.subjectName, this.subjectCode, this.semester});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

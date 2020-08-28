@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:canvasstudent/screens/subject_detail.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +34,11 @@ class HomeGridTile extends StatelessWidget {
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (_) => SubjectDetail(),
+                builder: (_) => SubjectDetail(
+                  subjectName: subject,
+                  subjectCode: subjectCode,
+                  semester: "201" + Random().nextInt(9).toString(),
+                ),
               ),
             );
           },
