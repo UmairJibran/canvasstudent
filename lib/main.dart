@@ -1,8 +1,7 @@
+import 'package:canvasstudent/screens/login.dart';
 import 'package:canvasstudent/screens/subject_detail.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
-import 'screens/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (ctx) => Home(),
+        "/": (ctx) => LoginPage(),
         SubjectDetail.route: (ctx) => SubjectDetail(),
       },
     );
